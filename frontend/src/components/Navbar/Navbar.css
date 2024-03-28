@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   --dark: #171717d0;
   --darkgrey: #515151;
@@ -45,13 +47,20 @@
   cursor: pointer;
 }
 
+.nav-menu li.active {
+  color: var(--darkgreen); /* Change text color when active */
+}
+
 .nav-menu hr {
   border: none;
   width: 80%;
   height: 3px;
   border-radius: 10px;
   background: var(--darkgreen);
-  color: (--darkgreen);
+}
+
+.act {
+  color: white;
 }
 
 .nav-login-cart {
@@ -93,14 +102,16 @@
   font-size: 14px;
   background: var(--darkgreen);
   color: white;
+  cursor: pointer;
 }
 
 .nav-logo img {
   width: 10vw;
-  height: 20vh;
+  height: 18vh;
 }
 
 .nav-login-cart img {
   width: 2vw;
   height: 4vh;
+  cursor: pointer;
 }
