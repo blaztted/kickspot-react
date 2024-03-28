@@ -1,0 +1,106 @@
+* {
+  --dark: #171717d0;
+  --darkgrey: #515151;
+  --grey: #626262;
+  --lightgrey: #f3f3f3;
+  --darkgreen: #4c9173;
+  --lightgreen: #d3f6d1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-logo p {
+  color: var(--dark);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: var(--grey);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--darkgreen);
+  color: (--darkgreen);
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-cart button {
+  width: 127px;
+  height: 48px;
+  outline: none;
+  border: 1px solid var(--grey);
+  border-radius: 75px;
+  color: var(--darkgrey);
+  font-size: 16px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+}
+
+.nav-login-cart button:hover {
+  background: var(--lightgrey);
+}
+
+.nav-login-cart button:active {
+  background: var(--lightgrey);
+}
+
+.nav-cart-count {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: var(--darkgreen);
+  color: white;
+}
+
+.nav-logo img {
+  width: 10vw;
+  height: 20vh;
+}
+
+.nav-login-cart img {
+  width: 2vw;
+  height: 4vh;
+}
