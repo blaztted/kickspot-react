@@ -1,0 +1,38 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  --dark: #171717d0;
+  --darkgrey: #515151;
+  --grey: #626262;
+  --lightgrey: #f3f3f3;
+  --darkgreen: #4c9173;
+  --lightgreen: #d3f6d1;
+}
+
+.hero {
+  background-image: url(../assets/images/background/hero.jpg);
+  height: 83vh;
+  width: 100%;
+  object-fit: cover; /* This property ensures the image covers the entire container */
+  background-size: cover; /* This property also helps in covering the entire container */
+  background-position: bottom 35% right 0%; /* You can write "center" instead */
+  padding: 0 50px 70px; /*text padding from the left*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero h4 {
+  padding-bottom: 15px;
+}
+.hero h1 {
+  font-size: 52px;
+  color: var(--lightgreen);
+  padding-bottom: 15px;
+}
+
+.hero button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}

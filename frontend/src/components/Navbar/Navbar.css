@@ -12,7 +12,6 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,8 +42,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 1px;
   cursor: pointer;
+}
+
+.nav-menu li:hover {
+  color: var(--darkgreen);
 }
 
 .nav-menu li.active {
@@ -57,10 +60,6 @@
   height: 3px;
   border-radius: 10px;
   background: var(--darkgreen);
-}
-
-.act {
-  color: white;
 }
 
 .nav-login-cart {
@@ -106,8 +105,8 @@
 }
 
 .nav-logo img {
-  width: 10vw;
-  height: 18vh;
+  width: 8vw;
+  height: 14vh;
 }
 
 .nav-login-cart img {
