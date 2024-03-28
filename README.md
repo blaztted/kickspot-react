@@ -1,1 +1,0 @@
-# kickspot-react
