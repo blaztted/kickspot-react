@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/images/logos/jordandraw.png";
 import cart_icon from "../assets/images/icons/shopping-cart.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -19,7 +20,11 @@ const Navbar = () => {
             setMenu("home");
           }}
         >
-          Home
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/">
+            {" "}
+            Home{" "}
+          </Link>
+
           {menu === "home" ? <hr /> : <></>}
         </li>
         <li
@@ -28,7 +33,11 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          Loja {menu === "shop" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/Shop">
+            {" "}
+            Shop{" "}
+          </Link>
+          {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           className={menu === "blog" ? "active" : ""}
@@ -36,7 +45,10 @@ const Navbar = () => {
             setMenu("blog");
           }}
         >
-          Blog {menu === "blog" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/Blog">
+            Blog
+          </Link>{" "}
+          {menu === "blog" ? <hr /> : <></>}
         </li>
         <li
           className={menu === "contacts" ? "active" : ""}
@@ -44,12 +56,21 @@ const Navbar = () => {
             setMenu("contacts");
           }}
         >
-          Contacts {menu === "contacts" ? <hr /> : <></>}
+          <Link style={{ textDecoration: "none", color: "inherit" }} to="/Contacts">
+            Contacts
+          </Link>{" "}
+          {menu === "contacts" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
-        <img src={cart_icon} alt="" />
+        <Link style={{ textDecoration: "none", color: "inherit" }} to="/login">
+          <button>Login</button>
+        </Link>
+        <Link style={{ textDecoration: "none", color: "inherit" }} to="/cart">
+          {" "}
+          <img src={cart_icon} alt="" />
+        </Link>
+
         <div className="nav-cart-count">0</div>
       </div>
     </div>
