@@ -5,7 +5,7 @@
   --grey: #626262;
   --lightgrey: #f3f3f3;
   --darkgreen: #4c9173;
-  --lightgreen: #d3f6d1;
+  --lightgreen: #84e07ffd;
 }
 
 .hero {
@@ -15,7 +15,7 @@
   object-fit: cover; /* This property ensures the image covers the entire container */
   background-size: cover; /* This property also helps in covering the entire container */
   background-position: bottom 35% right 0%; /* You can write "center" instead */
-  padding: 0 50px 70px; /*text padding from the left*/
+  padding: 0 40px 70px; /*text padding from the left*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;

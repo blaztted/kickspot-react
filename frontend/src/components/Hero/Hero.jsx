@@ -5,11 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const Hero = () => {
   return (
     <div className="hero">
-      <h2>Super exclusivos</h2>
-      <h1>Sneakers de sonho</h1>
+      <h2>Nem consegues acreditar...</h2>
+      <h1>Sneakers exclusivos</h1>
 
       <a href="shop.html">
-        <button type="button" class="btn btn-light">
+        <button type="button" className="btn btn-light">
           Compra agora
         </button>
       </a>

@@ -6,6 +6,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl: "./assets/images/products/nike-stussy.jpg",
     sizesAvailable: ["42", "43"],
     inStock: true,
@@ -18,6 +19,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -31,6 +33,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 180,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/nike-sb-dunk-low-pro-deep-royal-blue-and-vintage-green-hf3704-400-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -44,6 +47,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -57,6 +61,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -70,6 +75,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -83,6 +89,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
@@ -96,6 +103,7 @@ const productsData = [
     colorway: "",
     releaseYear: "2024",
     price: 200,
+    old_price: 250,
     imageUrl:
       "./assets/images/products/air-jordan-5-x-a-ma-maniére-dawn-para-mulher-fz5758-004-–-data-de-lançamento.jpg",
     sizesAvailable: ["42", "43"],
