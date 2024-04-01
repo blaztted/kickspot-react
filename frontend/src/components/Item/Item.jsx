@@ -5,11 +5,11 @@ export const Item = (props) => {
   return (
     <div className="item">
       <img src={props.image} alt="" />
-      <p>{props.name}</p>
-      <div className="item-prices">
-        <div className="item-price-new">{props.price}</div>
-        <div className="item-price-old">{props.old_price}</div>
+      <div class="des">
+        <span>{props.brand}</span>
+        <h5>{props.model}</h5>
       </div>
+      <h4>{props.price}€</h4>
     </div>
   );
 };
