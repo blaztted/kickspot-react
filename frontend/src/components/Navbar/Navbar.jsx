@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../assets/images/logos/low.png";
+import logo from "../assets/images/logos/nike.png";
 import cart_icon from "../assets/images/icons/shopping-cart.png";
 import { Link } from "react-router-dom";
 

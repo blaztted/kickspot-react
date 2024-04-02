@@ -33,6 +33,7 @@ export const Shop = (props) => {
           );
         })}
       </div>
+      <div className="shop-loadmore">Explore more</div>
     </div>
   );
 };

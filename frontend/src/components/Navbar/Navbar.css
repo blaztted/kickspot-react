@@ -36,6 +36,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-bottom: -5px;
+  margin: 0 200px 0;
 }
 
 .nav-menu li {
@@ -106,8 +107,8 @@
 }
 
 .nav-logo img {
-  width: 8vw;
-  height: 10vh;
+  width: 6vw;
+  height: 8vh;
 }
 
 .nav-login-cart img {

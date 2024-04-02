@@ -24,6 +24,11 @@
   align-items: center;
 }
 
+.shop-indexSort > div {
+  position: relative;
+  top: -10px;
+}
+
 .shop-indexSort p span {
   font-weight: 600;
 }
@@ -35,11 +40,24 @@
 }
 
 .shop-products {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding-right: 5%;
   padding-left: 5%;
-  margin-bottom: 100px;
+}
+
+.shop-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  width: 197px;
+  height: 49px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
 }
