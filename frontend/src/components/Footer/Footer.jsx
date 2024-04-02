@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import footer_logo from "../assets/images/logos/jordandraw.png";
+import footer_logo from "../assets/images/logos/low.png";
+
 import insta_icon from "../assets/images/icons/insta.png";
 import whatsapp_icon from "../assets/images/icons/whatsapp.png";
 import email_icon from "../assets/images/icons/email.png";
@@ -10,8 +11,6 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-logo">
         <img src={footer_logo} alt="" />
-
-        <p>KICKSPOT</p>
       </div>
       <ul className="footer-links">
         <li>Company</li>
@@ -33,7 +32,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>Bruno Silva, Copyright © 2024 - All Right Reserved</p>
+        <p>Bruno Silva, Copyright © 2024 - All Rights Reserved</p>
       </div>
     </div>
   );

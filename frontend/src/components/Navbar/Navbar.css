@@ -33,8 +33,9 @@
   list-style: none;
   gap: 50px;
   color: var(--grey);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
+  margin-bottom: -5px;
 }
 
 .nav-menu li {
@@ -42,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -59,7 +60,7 @@
   width: 80%;
   height: 3px;
   border-radius: 10px;
-  background: var(--darkgreen);
+  background: var(--darkgreen) !important;
 }
 
 .nav-login-cart {
@@ -105,8 +106,8 @@
 }
 
 .nav-logo img {
-  width: 6vw;
-  height: 12vh;
+  width: 8vw;
+  height: 10vh;
 }
 
 .nav-login-cart img {
