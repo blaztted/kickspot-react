@@ -112,3 +112,5 @@ export const productsData = [
     description: "blablabla",
   },
 ];
+
+export default productsData;
