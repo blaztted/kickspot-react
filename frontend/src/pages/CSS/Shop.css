@@ -9,9 +9,37 @@
   background-size: cover;
   background-position: center 50%;
   opacity: 0.9;
+  margin-bottom: 50px;
 }
 
 .shop-sort img {
   width: 30px;
   height: 30px;
+}
+
+.shop-indexSort {
+  display: flex;
+  margin: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-indexSort p span {
+  font-weight: 600;
+}
+
+.shop-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+}
+
+.shop-products {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 100px;
 }
