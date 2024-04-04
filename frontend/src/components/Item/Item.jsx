@@ -8,7 +8,7 @@ export const Item = (props) => {
       <Link to={`/product/${props.id}`}>
         <img src={props.image} alt="" />
       </Link>
-      <div class="des">
+      <div className="des">
         <span>{props.brand}</span>
         <h5>{props.model}</h5>
       </div>
