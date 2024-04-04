@@ -9,10 +9,10 @@ export const Product = () => {
   const { productId } = useParams();
   const product = ProductsData.find((e) => e.id === Number(productId));
 
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, [productId]); // Scroll to the top whenever productId changes
+  // useEffect(() => {
+  //   // Scroll to the top of the page when the component mounts
+  //   window.scrollTo(0, 0);
+  // }, [productId]); // Scroll to the top whenever productId changes
 
   return (
     <div>
