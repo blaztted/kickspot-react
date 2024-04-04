@@ -10,7 +10,7 @@
 
 .hero {
   background-image: url(../assets/images/background/hero.jpg);
-  height: 83vh;
+  height: 90vh;
   width: 100%;
   object-fit: cover; /* This property ensures the image covers the entire container */
   background-size: cover; /* This property also helps in covering the entire container */

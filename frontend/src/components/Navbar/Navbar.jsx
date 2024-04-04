@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../assets/images/logos/nike.png";
 import cart_icon from "../assets/images/icons/shopping-cart.png";
@@ -7,10 +7,26 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 0) {
+        navbar.classList.add("transparent");
+      } else {
+        navbar.classList.remove("transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="navbar">
+    <div className="navbar" id="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo" />
         {/* <p>KICKSPOT</p> */}
       </div>
       <ul className="nav-menu">
@@ -68,7 +84,7 @@ const Navbar = () => {
         </Link>
         <Link style={{ textDecoration: "none", color: "inherit" }} to="/cart">
           {" "}
-          <img src={cart_icon} alt="" />
+          <img src={cart_icon} alt="Cart Icon" />
         </Link>
 
         <div className="nav-cart-count">0</div>

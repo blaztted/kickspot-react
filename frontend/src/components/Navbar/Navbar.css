@@ -10,9 +10,18 @@
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-around;
+  display: flex !important;
+  justify-content: space-around !important ;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: sticky !important ;
+  top: 0;
+  height: 90px;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar.transparent {
+  opacity: 0.9;
 }
 
 .nav-logo {
@@ -25,6 +34,11 @@
   color: var(--dark);
   font-size: 28px;
   font-weight: 600;
+}
+
+.nav-logo img {
+  width: 6vw;
+  height: 8vh;
 }
 
 .nav-menu {
@@ -104,11 +118,6 @@
   background: var(--darkgreen);
   color: white;
   cursor: pointer;
-}
-
-.nav-logo img {
-  width: 6vw;
-  height: 8vh;
 }
 
 .nav-login-cart img {
