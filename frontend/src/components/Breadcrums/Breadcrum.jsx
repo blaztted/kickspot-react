@@ -7,7 +7,7 @@ const Breadcrum = (props) => {
   return (
     <div className="breadcrum">
       HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" />{" "}
-      {`${product.brand} ${product.model} `}
+      {`${product.brand} ${product.model}  `}
     </div>
   );
 };
