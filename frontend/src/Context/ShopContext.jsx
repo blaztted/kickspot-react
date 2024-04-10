@@ -22,7 +22,11 @@ const ShopContextProvider = (props) => {
     });
   };
   const remFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    setCartItems((prev) => {
+      const updatedCart = { ...prev, [itemId]: prev[itemId] - 1 };
+      console.log(updatedCart);
+      return updatedCart;
+    });
   };
 
   const contextValue = { ProductsData, cartItems, addToCart, remFromCart };
