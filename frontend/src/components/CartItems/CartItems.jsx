@@ -9,7 +9,7 @@ const CartItems = () => {
 
   return (
     <div className="cartitems">
-      <div className="cartitems-forman-main">
+      <div className="cartitems-format-main">
         <p>Products</p>
         <p>Title</p>
         <p>Price</p>
@@ -22,12 +22,12 @@ const CartItems = () => {
         if (cartItems[e.id] > 0) {
           return (
             <div>
-              <div className="cartitems-format">
+              <div className="cartitems-format cartitems-format-main">
                 <img src={e.image} alt="" className="carticon-product-icon" />
                 <p>{e.brand + e.model}</p>
                 <p>€{e.price}</p>
                 <button className="cartitems-quantity">{cartItems[e.id]}</button>
-                <p>{e.price * cartItems[e.id]}</p>
+                <p>€{e.price * cartItems[e.id]}</p>
                 <img
                   src={remove_icon}
                   alt=""
