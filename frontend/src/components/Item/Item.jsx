@@ -3,8 +3,9 @@ import "./Item.css";
 import { Link } from "react-router-dom";
 
 export const Item = (props) => {
+  const className = props.relatedProduct ? "related-item" : "item";
   return (
-    <div className="item">
+    <div className={className}>
       <Link to={`/product/${props.id}`}>
         <img src={props.image} alt="" />
       </Link>
