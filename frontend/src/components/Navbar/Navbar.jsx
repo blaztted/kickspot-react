@@ -1,13 +1,20 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "../assets/images/logos/nike.png";
 import cart_icon from "../assets/images/icons/shopping-cart.png";
+import drop_icon from "../assets/images/icons/drop.png";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
   const { getTotalCartItems } = useContext(ShopContext);
+  const menuRef = useRef();
+
+  const dropdown_toggle = (e) => {
+    menuRef.current.classList.toggle("nav-menu-visible");
+    e.target.classList.toggle("open");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +38,8 @@ const Navbar = () => {
         <img src={logo} alt="Logo" />
         {/* <p>KICKSPOT</p> */}
       </div>
-      <ul className="nav-menu">
+      <img className="nav-dropdown" onClick={dropdown_toggle} src={drop_icon} alt="" />
+      <ul ref={menuRef} className="nav-menu">
         <li
           className={menu === "home" ? "active" : ""}
           onClick={() => {
