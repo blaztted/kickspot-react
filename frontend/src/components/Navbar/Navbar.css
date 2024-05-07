@@ -214,11 +214,13 @@
     background: white;
     justify-content: center;
     top: 50px;
+    padding-right: 100px;
   }
 
   .nav-menu-visible {
     display: block !important;
-    display: flex;
+    display: flex !important;
+    margin-top: 20px;
   }
 
   .nav-dropdown.open {
