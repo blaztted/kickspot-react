@@ -61,3 +61,45 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+@media (max-width: 1280px) {
+  .shop-indexSort {
+    width: 90%;
+    margin: auto;
+  }
+  .shop-sort {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .shop-indexSort p {
+    font-size: 14px;
+  }
+
+  .shop-loadmore {
+    margin: 100px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .shop-products {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .shop-loadmore {
+    margin: 60px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .shop-products {
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+}
