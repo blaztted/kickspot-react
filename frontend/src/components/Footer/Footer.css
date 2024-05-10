@@ -78,3 +78,38 @@
   height: 3px;
   background-color: #c7c7c7;
 }
+
+@media (max-width: 850px) {
+  .footer {
+    gap: 20px;
+  }
+  .footer-logo {
+    gap: 10px;
+    align-items: end;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+
+  .footer-links {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .footer-social-icons img {
+    width: 38px;
+  }
+}
+
+@media (max-width: 732px) {
+  .footer {
+    padding-top: 800px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    padding-top: 0px;
+  }
+}
