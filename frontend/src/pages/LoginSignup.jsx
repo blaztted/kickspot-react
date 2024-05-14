@@ -13,7 +13,7 @@ export const LoginSignup = () => {
         </div>
         <button>Continue</button>
         <p className="loginsignup-login">
-          Already have an account? <span>Log in here!</span>
+          Already have an account? <span> Log in here!</span>
         </p>
         <div className="loginsignup-agree">
           <input type="checkbox" name="" id="" />
